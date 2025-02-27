@@ -14,7 +14,7 @@ body {
     display: flex;
     top: 80px;  
     left: 51px; /* Positionne à 20px de la gauche */
-    color: rgb(255, 235, 50); /* Couleur du texte */
+    color: rgb(255, 203, 31); /* Couleur du texte */
     font-size: 3em; /* Ajuste la taille du texte */
     font-weight: 800;
     letter-spacing: -2px; /* Ajuste l'espace entre les lettres */
@@ -40,14 +40,14 @@ body {
     left: 0;
     width: 100%;
     height: 400px; /* Hauteur du dégradé */
-    background: linear-gradient(to top, rgba(255, 235, 50, 0.2), rgba(255, 87, 51, 0));
+    background: linear-gradient(to top, rgba(255, 203, 31, 0.2), rgba(255, 87, 51, 0));
     z-index: 0;
     
 }
 
 .content h2 {
     font-size: 3em;
-    color: #333;
+    color: #ffffff;
     text-align: center;
     /* position: relative; */
     top: 170px;
@@ -60,7 +60,7 @@ body {
 }
 
 .second-color {
-    color: rgb(255, 235, 50); /* Deuxième couleur (vert) */
+    color: rgb(255, 203, 31); /* Deuxième couleur (vert) */
 }
 
 .beer-container {
@@ -75,7 +75,7 @@ body {
     
     /* background-color: #f0f0f0; */
     border-radius: 10px;
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     z-index: 1;
 }
 
@@ -153,13 +153,15 @@ body {
 
     .beer-container {
         flex-wrap: wrap; /* Permet de passer les bières à la ligne */
+        margin-left: 5%;
     }
 
     .beer {
-        width: 48%; /* Chaque bière occupe 48% de la largeur */
+        width: 20%; /* Chaque bière occupe 48% de la largeur */
+        
     }
     .beer-name p {
-        font-size: 1.3vw;
+        font-size: 0.7vw;
 
     }
 }
