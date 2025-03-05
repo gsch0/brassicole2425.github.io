@@ -11,8 +11,8 @@ body {
 .title {
     position: absolute;
     display: flex;
-    top: 20px;
-    left: 51px;
+    top: 35px;
+    left: 70px;
     color: rgb(255, 203, 31);
     font-size: 3em;
     font-weight: 800;
@@ -25,13 +25,14 @@ body {
     font-size: 1.9em;
     font-weight: 800;
     letter-spacing: -2px;
-    color: rgb(255, 203, 31);
-    margin-left: 52px;
+    color: white;
+    margin-left: 71px;
+    margin-top: 2px;
     margin-bottom: 0;
 }
 
 .logobrassi {
-    width: 30px;
+    width: 50px;
     height: auto;
     vertical-align: middle;
     margin-top: 10px;
@@ -138,7 +139,7 @@ body {
 @media (max-width: 1920px) {
     .title {
         font-size: 2.8em;
-        top: -10px;
+        top: 2px;
     }
     .beer-image{
         height: 175px;
@@ -238,7 +239,8 @@ body {
 @media (max-width: 600px) {
     .title {
         font-size: 1.8em;
-        top: -13px;
+        top: -8px;
+        left: 55px;
     }
     .beer-image{
         height: 40px;
@@ -246,6 +248,12 @@ body {
     }
     .logobrassi {
         margin-top: 10px;
+        width: 40px;
+    }
+    .date {
+        font-size: 1.5em;
+        margin-top: -10px;
+        margin-left: 55px;
     }
 
     .subtitle {
