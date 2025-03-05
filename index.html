@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
+   
     <title>Brassicole</title>
     <link rel="stylesheet" href="styles.css"> 
 </head>
@@ -17,15 +17,17 @@
         
         <img src="images/logo.png" alt="Bière 2" class="logobrassi">
         <h1 class="title">BRASSICOLE</h1>
-        <h2 class="date">Le&nbsp;&nbsp;1 &nbsp; et &nbsp;2 Avril</h2>
+        <h2 class="date">LE 1 ET 2 AVRIL</h2>
         <h2 class="subtitle"><span class="first-color">nos&nbsp;</span> <span class="second-color">bières</span></h2>
     </div>
 
-
-
-    <div class="beer-container">
+    
+    
+    <div id="beer-container" class="beer-container">
+        <div class="sepDiv">BAR &nbsp;N&nbsp;°&nbsp;<span class="second-color">1</span></div>
+        
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Pêche Mel" data-bar="1">
             <div class="beer-image">
                 <img src="images/pm.jpg" alt="Bière 2" class="beer-img">
             </div>
@@ -39,7 +41,7 @@
         <!------------------------------------------------->
 
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Cuvée des Trolls" data-bar="1">
             <div class="beer-image">
                 <img src="images/cv.png" alt="Bière 2" class="beer-img">
             </div>
@@ -52,7 +54,7 @@
         <!------------------------------------------------->
 
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Bush Caractère" data-bar="1">
             <div class="beer-image">
                 <img src="images/bc.jpg" alt="Bière 2" class="beer-img">
             </div>
@@ -65,7 +67,7 @@
         <!------------------------------------------------->
 
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Frambush"data-bar="1">
             <div class="beer-image">
                 <img src="images/frb.png" alt="Bière 2" class="beer-img">
             </div>
@@ -77,10 +79,14 @@
         </div>
         <!------------------------------------------------->
 
+        <div class="sepDiv">BAR &nbsp;N&nbsp;°&nbsp;<span class="second-color">2</span></div>
 
+
+            
+        
 
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Delirium Red"data-bar="2">
             <div class="beer-image">
                 <img src="images/red.webp" alt="Bière 2" class="beer-img">
             </div>
@@ -92,7 +98,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Carolus Triple"data-bar="2">
             <div class="beer-image">
                 <img src="images/CRT.jpg" alt="Bière 2" class="beer-img">
             </div>
@@ -104,7 +110,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Paranoia"data-bar="2">
             <div class="beer-image">
                 <img src="images/para.png" alt="Bière 2" class="beer-img">
             </div>
@@ -116,7 +122,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Cactus"data-bar="2">
             <div class="beer-image">
                 <img src="images/cactus.webp" alt="Bière 2" class="beer-img">
             </div>
@@ -131,7 +137,7 @@
 
 
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Pamplemouse"data-bar="2">
             <div class="beer-image">
                 <img src="images/pamp.png" alt="Bière 2" class="beer-img">
             </div>
@@ -143,7 +149,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Triple"data-bar="2">
             <div class="beer-image">
                 <img src="images/btri.png" alt="Bière 2" class="beer-img">
             </div>
@@ -154,8 +160,9 @@
                                 </div>
         </div>
         <!------------------------------------------------->
+        <div class="sepDiv">BAR &nbsp;N&nbsp;°&nbsp;<span class="second-color">3</span></div>
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="White IPA"data-bar="3">
             <div class="beer-image">
                 <img src="images/whipa.png" alt="Bière 2" class="beer-img">
             </div>
@@ -167,7 +174,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Paix Dieu"data-bar="3">
             <div class="beer-image">
                 <img src="images/pdie.png" alt="Bière 2" class="beer-img">
             </div>
@@ -181,7 +188,7 @@
 
 
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Paix Dieu Nova"data-bar="3">
             <div class="beer-image">
                 <img src="images/pdnov.png" alt="Bière 2" class="beer-img">
             </div>
@@ -193,7 +200,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Bon Secours Noel"data-bar="3">
             <div class="beer-image">
                 <img src="images/bs.png" alt="Bière 2" class="beer-img">
             </div>
@@ -204,8 +211,9 @@
                                 </div>
         </div>
         <!------------------------------------------------->
+        <div class="sepDiv">BAR &nbsp;N&nbsp;°&nbsp;<span class="second-color">4</span></div>
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Kasteel Red"data-bar="4">
             <div class="beer-image">
                 <img src="images/kr.webp" alt="Bière 2" class="beer-img">
             </div>
@@ -217,7 +225,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Kasteel Triple"data-bar="4">
             <div class="beer-image">
                 <img src="images/KASTEEL-TRIPLE.jpg" alt="Bière 2" class="beer-img">
             </div>
@@ -232,7 +240,7 @@
 
 
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Kasteel Rubus"data-bar="4">
             <div class="beer-image">
                 <img src="images/KASTEEL-RUBUS-FRAMBOISE.jpg" alt="Bière 2" class="beer-img">
             </div>
@@ -244,8 +252,8 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
-            <div class="beer-image">
+        <div class="beer" data-name="Cuvée Du Chateau"data-bar="4">
+            <div class="beer-image" >
                 <img src="images/images.png" alt="Bière 2" class="beer-img">
             </div>
             <div class="beer-name">
@@ -255,8 +263,9 @@
                                 </div>
         </div>
         <!------------------------------------------------->
+        <div class="sepDiv">BAR &nbsp;N&nbsp;°&nbsp;<span class="second-color">5</span></div>
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Corne Triple"data-bar="5">
             <div class="beer-image">
                 <img src="images/Corne-triple-33cl.png" alt="Bière 2" class="beer-img">
             </div>
@@ -268,7 +277,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Légende Harmony"data-bar="5">
             <div class="beer-image">
                 <img src="images/Legend-Harmony.png" alt="Bière 2" class="beer-img">
             </div>
@@ -284,7 +293,7 @@
 
 
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Quintine"data-bar="5">
             <div class="beer-image">
                 <img src="images/Quintine-Ambree.png" alt="Bière 2" class="beer-img">
             </div>
@@ -296,7 +305,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Apple"data-bar="5">
             <div class="beer-image">
                 <img src="images/apples.png" alt="Bière 2" class="beer-img">
             </div>
@@ -308,7 +317,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Tarot D'or"data-bar="5">
             <div class="beer-image">
                 <img src="images/lindemans-tarot-dor-25cl.webp" alt="Bière 2" class="beer-img">
             </div>
@@ -320,7 +329,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Tarot Noir"data-bar="5">
             <div class="beer-image">
                 <img src="images/LINDEMANS-TAROT-NOIR.jpg" alt="Bière 2" class="beer-img">
             </div>
@@ -333,10 +342,10 @@
         <!------------------------------------------------->
 
 
-
+        <div class="sepDiv">BAR &nbsp;N&nbsp;°&nbsp;<span class="second-color">6</span></div>
 
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Maredrert Extra"data-bar="6">
             <div class="beer-image">
                 <img src="images/maredret-extra-33.png" alt="Bière 2" class="beer-img">
             </div>
@@ -348,7 +357,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Faro"data-bar="6">
             <div class="beer-image">
                 <img src="images/fr.png" alt="Bière 2" class="beer-img">
             </div>
@@ -360,19 +369,19 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Peche Cardamon"data-bar="6">
             <div class="beer-image">
                 <img src="images/pc.png" alt="Bière 2" class="beer-img">
             </div>
             <div class="beer-name">
-                <h1><span class="first-color" >Peche Cardamon&nbsp;</span><span class ="second-color">4%</span> </h1>
+                <h1><span class="first-color" >Pêche Cardamon&nbsp;</span><span class ="second-color">4%</span> </h1>
                 <p><span class="caract">Arômes :</span> Parfum intense de pêche mûre, avec des nuances épicées de cardamome et des touches florales subtiles.<br><br>
                     <span class="caract">Goût :</span> Saveur douce et fruitée de pêche, légèrement épicée grâce à la cardamome, avec une touche de fraîcheur et une légère amertume en finale.</p>
                                 </div>
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Kriek Black Pepper"data-bar="6">
             <div class="beer-image">
                 <img src="images/timmermans-kriek-black-pepper-33-cl.png" alt="Bière 2" class="beer-img">
             </div>
@@ -390,7 +399,7 @@
 
 
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Barbar"data-bar="6">
             <div class="beer-image">
                 <img src="images/br.png" alt="Bière 2" class="beer-img">
             </div>
@@ -402,7 +411,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Floreffe Triple"data-bar="6">
             <div class="beer-image">
                 <img src="images/Floreffe_Triple_33_BM.png" alt="Bière 2" class="beer-img">
             </div>
@@ -414,7 +423,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Dikkenek IPA"data-bar="6">
             <div class="beer-image">
                 <img src="images/dik.webp" alt="Bière 2" class="beer-img">
             </div>
@@ -425,8 +434,9 @@
                                 </div>
         </div>
         <!------------------------------------------------->
+        <div class="sepDiv">BAR &nbsp;N&nbsp;°&nbsp;<span class="second-color">7</span></div>
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Jungle Joy"data-bar="7">
             <div class="beer-image">
                 <img src="images/jj.webp" alt="Bière 2" class="beer-img">
             </div>
@@ -441,7 +451,7 @@
 
 
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Bertha"data-bar="7">
             <div class="beer-image">
                 <img src="images/TripelBertha_800x.webp" alt="Bière 2" class="beer-img">
             </div>
@@ -453,7 +463,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Delta"data-bar="7"> 
             <div class="beer-image">
                 <img src="images/delta.png" alt="Bière 2" class="beer-img">
             </div>
@@ -465,7 +475,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Organicus"data-bar="7">
             <div class="beer-image">
                 <img src="images/lupulus-triple-blonde-33cl-1x24.jpg" alt="Bière 2" class="beer-img">
             </div>
@@ -477,7 +487,7 @@
         </div>
         <!------------------------------------------------->
         <!------------------------------------------------->
-        <div class="beer">
+        <div class="beer" data-name="Hopera"data-bar="7">
             <div class="beer-image">
                 <img src="images/HOPERA.jpg" alt="Bière 2" class="beer-img">
             </div>
@@ -494,6 +504,7 @@
 
     <div class="gradient-bottom"></div>
 
+    
 </body>
     
 </html>
