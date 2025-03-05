@@ -2,36 +2,40 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    
     background-color: rgb(19, 19, 19);
     align-items: center;
-    min-height: 100vh; /* Assure que le body couvre toute la hauteur */
-    position: relative; /* Nécessaire pour positionner le dégradé */
+    min-height: 100vh;
+    position: relative;
 }
 
 .title {
-    position: absolute; /* Fixe l'élément à une position précise */
+    position: absolute;
     display: flex;
-    top: 80px;  
-    left: 51px; /* Positionne à 20px de la gauche */
-    color: rgb(255, 203, 31); /* Couleur du texte */
-    font-size: 3em; /* Ajuste la taille du texte */
-    font-weight: 800;
-    letter-spacing: -2px; /* Ajuste l'espace entre les lettres */
-    align-items: center; /* Aligne verticalement l'image avec le texte */
     top: 20px;
-   
+    left: 51px;
+    color: rgb(255, 203, 31);
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: -2px;
+    align-items: center;
+}
+
+.date {
+    position: relative;
+    font-size: 1.9em;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: rgb(255, 203, 31);
+    margin-left: 10%;
+    margin-bottom: 0;
 }
 
 .logobrassi {
-    
-
     width: 30px;
     height: auto;
-    vertical-align: middle; /* Aligne verticalement l'image avec le texte */
+    vertical-align: middle;
     margin-top: 10px;
     margin-left : 10px;
-    
 }
 
 .gradient-bottom {
@@ -39,176 +43,191 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 400px; /* Hauteur du dégradé */
+    height: 400px;
     background: linear-gradient(to top, rgba(255, 203, 31, 0.2), rgba(255, 87, 51, 0));
     z-index: 0;
-    
 }
 
-.content h2 {
+.subtitle{
+    position: relative;
     font-size: 3em;
     color: #ffffff;
     text-align: center;
-    /* position: relative; */
-    top: 170px;
+    top: -40px;
     font-weight: 800;
     letter-spacing: -5px;
 }
 
 .first-color {
-    color: rgb(255, 255, 255); /* Première couleur (blanc) */
+    color: rgb(255, 255, 255);
 }
 
 .second-color {
-    color: rgb(255, 203, 31); /* Deuxième couleur (vert) */
+    color: rgb(255, 203, 31);
 }
 
 .beer-container {
     position: relative;
     display: flex;
-    flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur plusieurs lignes si nécessaire */
-    justify-content: space-between; /* Espacement entre les bières */
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 2px;
-    
     margin: 20px;
-    margin-top:50px;
-    
-    /* background-color: #f0f0f0; */
+    margin-top:-50px;
     border-radius: 10px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     z-index: 1;
+}
+
+.caract {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: rgb(255, 203, 31);
 }
 
 .beer {
     display: flex;
-    flex-direction: center; /* Les éléments (image et infos) s'empilent verticalement */
-    width: 100%; /* Chaque bière occupera 30% de la largeur du conteneur */
-    /* background-color: #f0f0f0; */
+    flex-direction: center;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
     gap: 15%;
-    
 }
 
 .beer-image {
-    
-    width: 50%;  /* L'image occupe 100% de la largeur de la div */
-    height: auto; /* La hauteur s'ajuste proportionnellement à la largeur */
+    width: 50%;
+    height: 500px;
     margin-bottom: 5px;
     padding: 0;
+    transform-origin: center;
     margin-left: -13%;
 }
-/* Media queries pour rendre le design responsive */
-.beer-img{
-    
-    width:100%;
+
+.beer-img {
+    width: 100%;
+    height: 175px;
     object-fit: contain;
-    height: auto;
+    display: block;
+    margin: 0 auto;
 }
+
 .beer-name {
-    
-    
     width: 80%;
-    
 }
+
 .beer-name h1 {
     font-family: 'Inter', sans-serif;
-    font-weight: 700; /* Medium */
+    font-weight: 700;
     font-size: 0.8em;
     display: flex;
     margin: 3px;
     letter-spacing: -1px;
     font-style: italic;
 }
+
 .beer-name p {
     font-family: 'Inter', sans-serif;
-    font-weight: 400; /* Medium */
+    font-weight: 400;
     font-size: 3vw;
     text-align: left;
     color: white;
-    
 }
+
 @media (max-width: 1920px) {
     .title {
-        
-        font-size: 2.5em;
+        font-size: 2.8em;
         top: -10px;
+    }
+    .beer-image{
+        height: 175px;
+        margin-top: 20%;
+    }
+    .date {
+        font-size: 1.7em;
     }
 
     .logobrassi {
-        margin-top: 26px;
+        margin-top: 35px;
     }
 
-    .content h2 {
+    .subtitle {
         font-size: 4em;
-        top: 120px;
     }
 
     .beer-name {
-        font-size: 3em;
+        font-size: 2.3em;
         margin-left: -20%;
     }
 
     .beer-container {
-        flex-wrap: wrap; /* Permet de passer les bières à la ligne */
+        flex-wrap: wrap;
         margin-left: 3%;
     }
 
     .beer {
-        width: 20%; /* Chaque bière occupe 48% de la largeur */
-        
+        width: 20%;
     }
-    .beer-name p {
-        font-size: 0.7vw;
-
+    .beer-name > p {
+        font-size: 0.4em;
     }
 }
 
-
 @media (max-width: 1200px) {
     .title {
-        
-        font-size: 2.5em; /* Réduit la taille du titre sur les écrans moyens */
+        font-size: 2.5em;
         top: -10px;
+    }
+    .beer-image{
+        height: 150px;
+        margin-top: 20%;
+    }
+    .date {
+        font-size: 2em;
     }
     .logobrassi {
         margin-top: 25px;
     }
-    .content h2 {
-        font-size: 4em; /* Réduit la taille du h2 */
-        top: 120px; /* Ajuste la position */
+    .subtitle {
+        font-size: 4em;
+        top: -30px;
+        color: red;
     }
     .beer-name{
         font-size: 3em;
         margin-left: -20%;
     }
     .beer {
-        width: 100%; /* Chaque bière occupe 48% de la largeur */
+        width: 100%;
     }
     .beer-name p {
         font-size: 3vw;
-
     }
 }
 
 @media (max-width: 800px) {
     .title {
-        
-        font-size: 2em; /* Réduit encore la taille du titre */
+        font-size: 2em;
         top: -10px;
+    }
+    .beer-image{
+        height: 100px;
+        margin-top: 20%;
+    }
+    .date {
+        font-size: 1.5em;
     }
     .logobrassi {
         margin-top: 15px;
     }
-    .content h2 {
-        font-size: 2.8em; /* Réduit la taille du h2 */
-        top: 100px; /* Ajuste la position */
+    .subtitle {
+        font-size: 2.8em;
+        top: -20px;
     }
 
     .gradient-bottom {
-        height: 300px; /* Réduit la hauteur du dégradé */
+        height: 300px;
     }
     .beer-name{
         font-size: 3em;
@@ -218,20 +237,24 @@ body {
 
 @media (max-width: 600px) {
     .title {
-        font-size: 1.8em; /* Encore plus petit sur les petits écrans */
+        font-size: 1.8em;
         top: -13px;
+    }
+    .beer-image{
+        height: 40px;
+        margin-top: 5%;
     }
     .logobrassi {
         margin-top: 10px;
     }
 
-    .content h2 {
-        font-size: 2.5em; /* Réduit encore la taille du h2 */
-        top: 80px; /* Ajuste la position */
+    .subtitle {
+        font-size: 2.5em;
+        top: -20px;
     }
 
     .gradient-bottom {
-        height: 200px; /* Réduit la hauteur du dégradé */
+        height: 200px;
     }
     .beer-name{
         font-size: 2em;
