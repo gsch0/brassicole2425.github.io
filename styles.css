@@ -7,6 +7,9 @@ body {
     min-height: 100vh;
     position: relative;
 }
+html, body {
+    overflow-x: hidden;
+}
 
 .title {
     position: relative;
