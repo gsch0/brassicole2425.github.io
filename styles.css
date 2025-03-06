@@ -140,6 +140,7 @@ html, body {
     padding: 0;
     transform-origin: center;
     margin-left: -13%;
+    margin-left: -13%;
 }
 
 .beer-img {
@@ -179,7 +180,7 @@ html, body {
     }
     .beer-image{
         height: 175px;
-        margin-top: 20%;
+        margin-top: 5%;
     }
     .sepDiv{
         
